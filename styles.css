@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+}
+
+main {
+  background: linear-gradient(
+    18deg,
+    rgba(119, 45, 213, 1) 0%,
+    rgba(255, 19, 77, 1) 100%
+  );
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-icon {
+  width: 3rem;
+}
+form {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.mainCard {
+  width: 40vw;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.title-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.title {
+  text-transform: uppercase;
+  font-family: "Belanosima", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin: 0 8px 0 0;
+  padding: 0;
+}
+.inputForm {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #eee;
+  outline: none;
+  width: 70%;
+  height: 100%;
+}
+
+.inputForm::placeholder {
+  padding: 0px;
+}
+
+.btnCreate {
+  /*glass background*/
+  max-height: 100%;
+  padding: 10px 15px;
+  background: linear-gradient(18deg, rgb(119, 45, 213) 0%, #ff134d 100%);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  padding: 15px 25px;
+
+  /*Engrave text to glass*/
+  border-radius: 3px;
+  box-shadow: 0px 1px 4px -2px #333;
+  text-shadow: 0px -1px #333;
+}
+.btnCreate::after {
+  /* add glass effect to button */
+  content: "";
+  position: absolute;
+  border-radius: 3px;
+  top: 2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: 50%;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.2)
+  );
+}
+.btnCreate:hover {
+  background: linear-gradient(18deg, #3600b3, #c10054);
+}
+
+.cardsList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  max-height: 60vh;
+  height: 60vh;
+}
+
+.card {
+  width: 92%;
+  padding: 15px;
+  box-shadow: 2px 3px 3px 3px rgba(71, 71, 71, 0.2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  margin: 5px 0px;
+  position: relative;
+}
+
+.task {
+  padding: 10px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: rgb(99, 219, 62);
+}
+
+.completeIcon {
+  color: rgb(99, 219, 62);
+}
+
+.trashIcon:hover {
+  color: rgb(255, 19, 77, 1);
+}
+
+.deleteConfirmationPop {
+  position: relative;
+  background-color: rgba(255, 255, 255);
+  z-index: 99;
+  width: 100%;
+  top: -100px;
+  left: 0;
+}
+.deleteSpace {
+  position: relative;
+  width: 30%;
+}
+
+.noTasks {
+  font-size: 48px;
+}
