@@ -68,7 +68,6 @@ form {
 .btnCreate {
   /*glass background*/
   max-height: 100%;
-  padding: 10px 15px;
   background: linear-gradient(18deg, rgb(119, 45, 213) 0%, #ff134d 100%);
   border: none;
   color: #fff;
@@ -76,7 +75,7 @@ form {
   cursor: pointer;
   position: relative;
   display: inline-block;
-  padding: 15px 25px;
+  padding: 13px 25px;
 
   /*Engrave text to glass*/
   border-radius: 3px;
@@ -159,4 +158,49 @@ form {
 
 .noTasks {
   font-size: 48px;
+}
+
+@media screen and (max-width: 1100px) {
+  .mainCard {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .mainCard {
+    width: 65vw;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .mainCard {
+    width: 75vw;
+  }
+  * {
+    font-size: 12px;
+  }
+  .title-icon {
+    width: 2rem;
+  }
+  .card {
+    width: 86%;
+    padding: 11px;
+    box-shadow: 1px 2px 2px 2px rgba(71, 71, 71, 0.2);
+  }
+  .btnCreate {
+    /*glass background*/
+    max-height: 100%;
+    padding: 12px 20px;
+  }
+}
+
+@media screen and (max-width: 476px) {
+  .inputForm {
+    height: 25px;
+  }
+  .btnCreate {
+    /*glass background*/
+    max-height: 100%;
+    padding: 8px 20px;
+  }
 }
